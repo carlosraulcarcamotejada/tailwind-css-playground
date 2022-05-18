@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { FC } from "react";
+import styled from "styled-components";
+// import ModalMacOS from "./componentes/Own componentes/ModalMacOS";
+// import Navbar from "./componentes/Tailwind Labs/NavBar";
+// import Table from "./componentes/Own componentes/Table";
+// import Boxes from "./componentes/Tailwind Labs/Boxes";
+// import CssGrid from "./componentes/Tailwind Labs/CssGrid";
+// import CssGrid2 from "./componentes/Tailwind Labs/CssGrid2";
+// import Gradients from "./componentes/Tailwind Labs/Gradients";
+// import StyledForm from "./componentes/Tailwind Labs/StyledForm";
+// import { dataCustomers, headerCustomer } from "./data/data";
+// import { DataTable, HeaderTable } from "./interfaces/DataTable";
+import RouterApp from "./routers/RouterApp";
 
-function App() {
+const App: FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RouterApp />   
   );
-}
+};
+
+const BackgroundImage = styled.div`
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+`;
 
 export default App;
